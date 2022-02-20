@@ -1,0 +1,21 @@
+{
+    "name": "evand/crud-php-pdo-my-sql",
+    "description": "Cadastro de Produtos em PHP, MySql, PDO, Bootstrap",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Evand\\CrudPhpPdoMySql\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "evandroneves20",
+            "email": "evandroneves20@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "twbs/bootstrap": "4.6.1",
+        "ext-pdo": "*"
+    }
+}
