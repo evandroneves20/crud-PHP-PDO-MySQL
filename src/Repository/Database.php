@@ -2,16 +2,14 @@
 
 namespace Evand\CrudPhpPdoMySql\Repository;
 
-use Evand\CrudPhpPdoMySql\Model\IModel;
-
 class Database
 {
     private $type = "mysql";
     private $host = "localhost";
     private $port = "3306";
-    private $user = "evandro";
-    private $db = "cad_produto";
-    private $password = "123";
+    private $user = "root";
+    private $db = "crud_php";
+    private $password = "tt333";
 
     private $conexao;
 
@@ -63,9 +61,9 @@ class Database
         $query->execute($params);
         $result = $query->rowCount();
 
-        if (!$result) {
-            throw new \Exception("Erro ao Atualizar o Registro <br>{$query->errorInfo()}");
-        }
+//        if (!$result) {
+//            throw new \Exception("Erro ao Atualizar o Registro <br>{$query->errorInfo()}");
+//        }
 
         $this->__destruct();
         return $result;
@@ -94,5 +92,12 @@ class Database
 
         $this->__destruct();
         return $result;
+    }
+
+    public function findDB($sql, $params, $object){
+        $query = $this->conecta()->prepare($sql);
+        $query->execute($params);
+
+        return $query->fetchObject(get_class($object));
     }
 }

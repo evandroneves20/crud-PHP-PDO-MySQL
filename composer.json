@@ -15,7 +15,6 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "twbs/bootstrap": "4.6.1",
         "ext-pdo": "*"
     }
 }
