@@ -20,7 +20,7 @@ Pra rodar o sistema utilize os comandos:
 
 ```bash
 composer install
-php -S localhost:8000/index.php?class=produto
+php -S localhost:8000
 ```
 
-Fique a vontade para 
+Fique a vontade para perguntas e sugestões de melhoria no código
