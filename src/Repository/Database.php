@@ -88,7 +88,7 @@ class Database
         $query = $this->conecta()->prepare($sql);
         $query->execute($params);
 
-        $result = $query->fetchAll(\PDO::FETCH_OBJ) or die(print_r($query->errorInfo(), true));
+        $result = $query->fetchAll(\PDO::FETCH_OBJ);
 
         $this->__destruct();
         return $result;

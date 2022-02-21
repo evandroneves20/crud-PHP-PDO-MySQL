@@ -33,11 +33,7 @@ class Produto
 
         $result = $db->selectDB($sql);
 
-        $collection = [];
-        foreach ($result as $produto) {
-            array_push($collection, $produto);
-        }
-        return $collection;
+        return $result;
     }
 
     public function save()

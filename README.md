@@ -13,7 +13,7 @@ Crud em PHP/MySQL, usando PDO para acesso ao banco.
 5. Front em Bootstrap 4.6 (https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 6. O arquivo script.sql cria o banco de dados
 
-O arquivo de configuração conexão com o banco está na pasta src/Repository/Database.php
+O arquivo de configuração com o banco está no arquivo src/Repository/Database.php
 
 Pra rodar o sistema utilize os comandos:
 (Assumindo que você já tenha o PHP e o Composer instalados)
